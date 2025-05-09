@@ -158,7 +158,7 @@ export default function Home() {
       <section className="py-16 bg-primary/5 border-y border-primary/10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <StatsCounter value={2} label="Years Experience" suffix="+" />
+            <StatsCounter value={1.5} label="Years Experience" suffix="+" />
             <StatsCounter value={30} label="Projects Completed" suffix="+" />
             <StatsCounter value={20} label="Happy Clients" suffix="+" />
             <StatsCounter value={50} label="GitHub Contributions" suffix="+" />
@@ -245,8 +245,8 @@ export default function Home() {
               description="Crisis management application connecting donors with organizations through an interactive map interface and secure donation processing."
               tags={["Next.js", "TypeScript", "Firebase", "Mapbox"]}
               imageUrl="/donation-platform.jpg"
-              demoUrl="#"
-              codeUrl="#"
+              demoUrl="https://donations-platform-zeta.vercel.app"
+              codeUrl="https://github.com/OmerAlfiel"
               index={2}
             />
           </div>
