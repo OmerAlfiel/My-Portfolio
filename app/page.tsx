@@ -50,11 +50,11 @@ export default function Home() {
           className="relative w-48 h-48 mb-10 rounded-full overflow-hidden border-4 border-primary/50 shadow-xl"
         >
           <Image 
-            src="/profile.png" 
+            src="/profile1.jpg" 
             alt="Profile" 
             width={192} 
             height={192} 
-            className="object-cover object-[center_40%]" 
+            className="object-cover object-[center_5%]" 
             priority 
           />
         </motion.div>
