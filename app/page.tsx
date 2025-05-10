@@ -190,7 +190,7 @@ export default function Home() {
                 I'm a full-stack developer with expertise in TypeScript, Node.js, and React. I build secure, scalable web applications that solve real business problems. My code is clean, maintainable, and follows best practices for architecture and security.
               </RevealText>
               <RevealText className="text-lg mb-6" delay={0.2}>
-                I've mastered Firebase and Supabase for real-time applications and cloud integrations. I enjoy database design (both NoSQL and SQL) and excel at creating location-based features and optimizing complex data workflows.
+                I've developed expertise in cloud solutions for real-time applications and database management. My experience spans both NoSQL and SQL database design, with a focus on optimizing complex data workflows and implementing location-based features.
               </RevealText>
               <RevealText className="text-lg" delay={0.3}>
                 Beyond coding, I value software professionalism through automated testing and CI/CD pipelines. I adapt quickly to new technologies but focus on practical solutions that deliver real value—fast, secure, and user-focused.
