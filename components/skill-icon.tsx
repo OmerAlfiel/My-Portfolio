@@ -27,6 +27,7 @@ import {
   SiFigma,
   SiVercel,
   SiAmazonwebservices,
+  SiRailway,
 } from "react-icons/si"
 import { FaServer } from "react-icons/fa"
 
@@ -60,6 +61,7 @@ const iconComponents: Record<string, React.ElementType> = {
   Figma: SiFigma,
   Vercel: SiVercel,
   AWS: SiAmazonwebservices,
+  Railway: SiRailway
 }
 
 const iconColors: Record<string, string> = {
@@ -87,11 +89,37 @@ const iconColors: Record<string, string> = {
   Figma: "#F24E1E",
   Vercel: "#000000",
   AWS: "#FF9900",
+  Railway: "#0B0D0E",
 }
 
 export default function SkillIcon({ name, index }: SkillIconProps) {
   const Icon = iconComponents[name] || SiJavascript
-  const color = iconColors[name] || "#666"
+  const originalColor = iconColors[name] || "#666"
+  
+  // Function to determine if a color is dark
+  const isDarkColor = (hexColor: string) => {
+    // Remove the hash if it exists
+    const hex = hexColor.replace('#', '')
+    
+    // Convert hex to RGB
+    const r = parseInt(hex.substring(0, 2), 16)
+    const g = parseInt(hex.substring(2, 4), 16)
+    const b = parseInt(hex.substring(4, 6), 16)
+    
+    // Calculate brightness (perceived)
+    const brightness = (r * 299 + g * 587 + b * 114) / 1000
+    
+    // If brightness is less than 128, it's considered a dark color
+    return brightness < 128
+  }
+  
+  // If the original color is dark, use a lighter alternative in dark mode
+  const color = isDarkColor(originalColor) ? 
+    (originalColor === "#000000" ? "#FFFFFF" : `${originalColor}99`) : // Add transparency or use white
+    originalColor
+
+  // Add a lighter background for dark icons
+  const iconBackground = isDarkColor(originalColor) ? "bg-gray-100 dark:bg-gray-800" : "bg-background"
 
   return (
     <motion.div
@@ -111,9 +139,21 @@ export default function SkillIcon({ name, index }: SkillIconProps) {
         transition: { duration: 0.5 },
       }}
     >
-      <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-background shadow-lg p-3 border border-muted">
-        <Icon size={36} color={color} className="transition-all duration-300" />
-      </div>
+      <motion.div 
+        className={`w-16 h-16 flex items-center justify-center rounded-xl ${iconBackground} shadow-lg p-3 border border-muted`}
+        whileHover={{ 
+          backgroundColor: "rgba(255, 255, 255, 0.2)",
+          borderColor: originalColor,
+          boxShadow: `0 0 8px ${originalColor}40` 
+        }}
+      >
+        <motion.div
+          whileHover={{ scale: 1.15 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <Icon size={36} color={color} className="transition-all duration-300" />
+        </motion.div>
+      </motion.div>
       <span className="text-sm font-medium">{name}</span>
     </motion.div>
   )

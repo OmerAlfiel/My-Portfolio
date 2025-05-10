@@ -227,7 +227,7 @@ export default function Home() {
               description="A comprehensive platform connecting refugees with essential resources, support services, and volunteers through a smart matching system and interactive maps."
               tags={["React", "NestJS", "TypeScript", "PostgreSQL"]}
               imageUrl="/refugee-connect.jpg"
-              demoUrl="https://github.com/OmerAlfiel/Refuge-connect-bridg"
+              demoUrl="https://refuge-connect-bridg.vercel.app"
               codeUrl="https://github.com/OmerAlfiel/Refuge-connect-bridg"
               index={0}
             />
@@ -333,11 +333,10 @@ export default function Home() {
                 <SkillIcon name="Git" index={0} />
                 <SkillIcon name="GitHub" index={1} />
                 <SkillIcon name="Docker" index={2} />
-                <SkillIcon name="Jest" index={3} />
-                <SkillIcon name="Cypress" index={4} />
-                <SkillIcon name="Figma" index={5} />
-                <SkillIcon name="Vercel" index={6} />
-                <SkillIcon name="AWS" index={7} />
+                <SkillIcon name="Figma" index={3} />
+                <SkillIcon name="Vercel" index={4} />
+                <SkillIcon name="AWS" index={5} />
+                <SkillIcon name="Railway" index={6} />
               </div>
             </div>
           </div>
