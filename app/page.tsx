@@ -396,7 +396,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <h4 className="text-xl font-medium">Freelance Backend Software Developer</h4>
+                <h4 className="text-xl font-medium">Freelance Software Developer</h4>
                 <p className="text-muted-foreground mb-2">Remote | Dec 2023 - Present</p>
                 <ul className="list-disc list-inside space-y-2">
                   <li>Developed full-stack web applications for clients using Next.js, Firebase, and Supabase</li>
@@ -421,6 +421,23 @@ export default function Home() {
                   <li>Worked with teams to make sure AI training data was high-quality</li>
                 </ul>
               </motion.div>
+              <motion.div
+  className="border-l-4 border-primary pl-6 py-2"
+  initial={{ opacity: 0, x: -20 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: 0.6 }}
+>
+  <h4 className="text-xl font-medium">Software Developer – Gezira College Of Technology</h4>
+  <p className="text-muted-foreground mb-2">Khartoum, Sudan | May 2025 - Aug 2025</p>
+  <ul className="list-disc list-inside space-y-2">
+    <li>Developed the GCT University App, a mobile application for students and faculty using React Native and Expo</li>
+    <li>Implemented authentication, academic supervision, admission, and registration features with Supabase backend</li>
+    <li>Designed reusable UI components, custom contexts, and navigation with Expo Router</li>
+    <li>Delivered communication modules including chat, notifications, and announcements</li>
+    <li>Ensured full RTL Arabic support and responsive mobile UI</li>
+  </ul>
+</motion.div>
             </div>
       
             <div className="mb-12">
