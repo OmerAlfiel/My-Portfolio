@@ -415,7 +415,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
                 <h4 className="text-xl font-medium">AI Trainer</h4>
-                <p className="text-muted-foreground mb-2">LabelBox, Remote | Nov 2024 - Present</p>
+                <p className="text-muted-foreground mb-2">LabelBox, Remote | Nov 2024 - May 2025</p>
                 <ul className="list-disc list-inside space-y-2">
                   <li>Used AI tools to teach and improve machine learning models</li>
                   <li>Worked with teams to make sure AI training data was high-quality</li>
