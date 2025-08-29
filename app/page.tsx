@@ -49,17 +49,20 @@ export default function Home() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="relative w-48 h-48 mb-10 rounded-full overflow-hidden border-4 border-primary/50 shadow-xl"
         >
-          <Image 
-            src="/profile1.jpg" 
-            alt="Profile" 
-            width={192} 
-            height={192} 
-            className="object-cover object-[center_5%]" 
-            priority 
+          <Image
+            src="/profile1.jpg"
+            alt="Profile"
+            width={192}
+            height={192}
+            className="object-cover object-[center_5%]"
+            priority
           />
         </motion.div>
 
-        <AnimatedText text="Hi, I'm Omer" className="text-4xl md:text-6xl font-bold mb-4" />
+        <AnimatedText
+          text="Hi, I'm Omer"
+          className="text-4xl md:text-6xl font-bold mb-4"
+        />
 
         <motion.p
           className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl"
@@ -67,7 +70,8 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          Full-stack web developer specializing in building exceptional digital experiences
+          Full-stack web developer specializing in building exceptional digital
+          experiences
         </motion.p>
 
         <motion.div
@@ -105,21 +109,38 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
-          <motion.div whileHover={{ scale: 1.2, rotate: 10 }} whileTap={{ scale: 0.9 }}>
+          <motion.div
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://github.com/OmerAlfiel" target="_blank" aria-label="GitHub">
+              <Link
+                href="https://github.com/OmerAlfiel"
+                target="_blank"
+                aria-label="GitHub"
+              >
                 <Github className="h-5 w-5" />
               </Link>
             </Button>
           </motion.div>
-          <motion.div whileHover={{ scale: 1.2, rotate: -10 }} whileTap={{ scale: 0.9 }}>
+          <motion.div
+            whileHover={{ scale: 1.2, rotate: -10 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://www.linkedin.com/in/omer-ahmed-964152205/" target="_blank" aria-label="LinkedIn">
+              <Link
+                href="https://www.linkedin.com/in/omer-ahmed-964152205/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
                 <Linkedin className="h-5 w-5" />
               </Link>
             </Button>
           </motion.div>
-          <motion.div whileHover={{ scale: 1.2, rotate: 10 }} whileTap={{ scale: 0.9 }}>
+          <motion.div
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <Button variant="ghost" size="icon" asChild>
               <Link href="mailto:omer.al7labe.oa@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
@@ -169,16 +190,18 @@ export default function Home() {
       {/* About Section */}
       <AnimatedSection id="about" className="py-20">
         <div className="container mx-auto px-4">
-          <RevealText className="text-3xl md:text-4xl font-bold mb-8 text-center">About Me</RevealText>
+          <RevealText className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            About Me
+          </RevealText>
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             <ParallaxSection baseVelocity={0.05}>
               <ThreeDCard className="rounded-xl overflow-hidden shadow-xl">
                 <div className="relative h-[500px] w-full">
-                  <Image 
-                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" 
-                    alt="Web Development Workspace" 
-                    fill 
-                    className="object-cover" 
+                  <Image
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop"
+                    alt="Web Development Workspace"
+                    fill
+                    className="object-cover"
                     unoptimized={false}
                   />
                 </div>
@@ -187,13 +210,23 @@ export default function Home() {
 
             <div>
               <RevealText className="text-lg mb-6" delay={0.1}>
-                I'm a full-stack developer with expertise in TypeScript, Node.js, and React. I build secure, scalable web applications that solve real business problems. My code is clean, maintainable, and follows best practices for architecture and security.
+                I'm a full-stack developer with expertise in TypeScript,
+                Node.js, and React. I build secure, scalable web applications
+                that solve real business problems. My code is clean,
+                maintainable, and follows best practices for architecture and
+                security.
               </RevealText>
               <RevealText className="text-lg mb-6" delay={0.2}>
-                I've developed expertise in cloud solutions for real-time applications and database management. My experience spans both NoSQL and SQL database design, with a focus on optimizing complex data workflows and implementing location-based features.
+                I've developed expertise in cloud solutions for real-time
+                applications and database management. My experience spans both
+                NoSQL and SQL database design, with a focus on optimizing
+                complex data workflows and implementing location-based features.
               </RevealText>
               <RevealText className="text-lg" delay={0.3}>
-                Beyond coding, I value software professionalism through automated testing and CI/CD pipelines. I adapt quickly to new technologies but focus on practical solutions that deliver real value—fast, secure, and user-focused.
+                Beyond coding, I value software professionalism through
+                automated testing and CI/CD pipelines. I adapt quickly to new
+                technologies but focus on practical solutions that deliver real
+                value—fast, secure, and user-focused.
               </RevealText>
 
               <motion.div
@@ -220,7 +253,9 @@ export default function Home() {
       {/* Projects Section */}
       <AnimatedSection id="projects" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <RevealText className="text-3xl md:text-4xl font-bold mb-8 text-center">Featured Projects</RevealText>
+          <RevealText className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            Featured Projects
+          </RevealText>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard
               title="Refuge Connect Bridge"
@@ -265,7 +300,8 @@ export default function Home() {
               className="border-primary/20 hover:border-primary/50 transition-all duration-300"
             >
               <Link href="https://github.com/OmerAlfiel" target="_blank">
-                View More Projects on GitHub <ArrowRight className="ml-2 h-4 w-4" />
+                View More Projects on GitHub{" "}
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </motion.div>
@@ -275,7 +311,9 @@ export default function Home() {
       {/* Skills Section */}
       <AnimatedSection id="skills" className="py-20">
         <div className="container mx-auto px-4">
-          <RevealText className="text-3xl md:text-4xl font-bold mb-12 text-center">Skills & Technologies</RevealText>
+          <RevealText className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Skills & Technologies
+          </RevealText>
           <div className="max-w-5xl mx-auto">
             <div className="mb-16">
               <motion.h3
@@ -344,9 +382,11 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Testimonials Section */}
-            <AnimatedSection id="testimonials" className="py-20 bg-muted/30">
+      <AnimatedSection id="testimonials" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <RevealText className="text-3xl md:text-4xl font-bold mb-12 text-center">What People Say</RevealText>
+          <RevealText className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            What People Say
+          </RevealText>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <TestimonialCard
               quote="Omer is an exceptional backend developer who consistently delivers high-quality code. His deep understanding of database optimization and API architecture has been invaluable to our projects. He's also great at explaining complex technical concepts to non-technical stakeholders."
@@ -376,7 +416,9 @@ export default function Home() {
       {/* Experience Section */}
       <AnimatedSection id="experience" className="py-20">
         <div className="container mx-auto px-4">
-          <RevealText className="text-3xl md:text-4xl font-bold mb-12 text-center">Experience & Education</RevealText>
+          <RevealText className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Experience & Education
+          </RevealText>
           <div className="max-w-3xl mx-auto">
             <div className="mb-12">
               <motion.h3
@@ -388,7 +430,7 @@ export default function Home() {
               >
                 Work Experience
               </motion.h3>
-      
+
               <motion.div
                 className="mb-8 border-l-4 border-primary pl-6 py-2"
                 initial={{ opacity: 0, x: -20 }}
@@ -396,50 +438,72 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <h4 className="text-xl font-medium">Freelance Software Developer</h4>
-                <p className="text-muted-foreground mb-2">Remote | Dec 2023 - Present</p>
+                <h4 className="text-xl font-medium">
+                  Freelance Software Developer
+                </h4>
+                <p className="text-muted-foreground mb-2">
+                  Remote | Dec 2023 - Present
+                </p>
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Developed full-stack web applications for clients using Next.js, Firebase, and Supabase</li>
-                  <li>Built robust REST APIs and backend systems (Nest.js) ensuring performance and security</li>
-                  <li>Integrated third-party APIs and services, including real-time tracking with Mapbox GL JS</li>
-                  <li>Managed relational and NoSQL databases (PostgreSQL, MongoDB)</li>
-                  <li>Delivered scalable, responsive applications and handled deployments on AWS</li>
+                  <li>
+                    Developed full-stack web applications for clients using
+                    Next.js, Firebase, and Supabase
+                  </li>
+                  <li>
+                    Built robust REST APIs and backend systems (Nest.js)
+                    ensuring performance and security
+                  </li>
+                  <li>
+                    Integrated third-party APIs and services, including
+                    real-time tracking with Mapbox GL JS
+                  </li>
+                  <li>
+                    Managed relational and NoSQL databases (PostgreSQL, MongoDB)
+                  </li>
+                  <li>
+                    Delivered scalable, responsive applications and handled
+                    deployments on AWS
+                  </li>
                 </ul>
               </motion.div>
-      
+
               <motion.div
                 className="border-l-4 border-primary pl-6 py-2"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
               >
-                <h4 className="text-xl font-medium">AI Trainer</h4>
-                <p className="text-muted-foreground mb-2">LabelBox, Remote | Nov 2024 - May 2025</p>
+                <h4 className="text-xl font-medium">
+                  Software Developer – Gezira College Of Technology
+                </h4>
+                <p className="text-muted-foreground mb-2">
+                  Khartoum, Sudan | May 2025 - Aug 2025
+                </p>
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Used AI tools to teach and improve machine learning models</li>
-                  <li>Worked with teams to make sure AI training data was high-quality</li>
+                  <li>
+                    Developed the GCT University App, a mobile application for
+                    students and faculty using React Native and Expo
+                  </li>
+                  <li>
+                    Implemented authentication, academic supervision, admission,
+                    and registration features with Supabase backend
+                  </li>
+                  <li>
+                    Designed reusable UI components, custom contexts, and
+                    navigation with Expo Router
+                  </li>
+                  <li>
+                    Delivered communication modules including chat,
+                    notifications, and announcements
+                  </li>
+                  <li>
+                    Ensured full RTL Arabic support and responsive mobile UI
+                  </li>
                 </ul>
               </motion.div>
-              <motion.div
-  className="border-l-4 border-primary pl-6 py-2"
-  initial={{ opacity: 0, x: -20 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6, delay: 0.6 }}
->
-  <h4 className="text-xl font-medium">Software Developer – Gezira College Of Technology</h4>
-  <p className="text-muted-foreground mb-2">Khartoum, Sudan | May 2025 - Aug 2025</p>
-  <ul className="list-disc list-inside space-y-2">
-    <li>Developed the GCT University App, a mobile application for students and faculty using React Native and Expo</li>
-    <li>Implemented authentication, academic supervision, admission, and registration features with Supabase backend</li>
-    <li>Designed reusable UI components, custom contexts, and navigation with Expo Router</li>
-    <li>Delivered communication modules including chat, notifications, and announcements</li>
-    <li>Ensured full RTL Arabic support and responsive mobile UI</li>
-  </ul>
-</motion.div>
             </div>
-      
+
             <div className="mb-12">
               <motion.h3
                 className="text-2xl font-semibold mb-6"
@@ -450,7 +514,7 @@ export default function Home() {
               >
                 Education
               </motion.h3>
-      
+
               <motion.div
                 className="border-l-4 border-primary pl-6 py-2"
                 initial={{ opacity: 0, x: -20 }}
@@ -458,13 +522,23 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <h4 className="text-xl font-medium">Bachelor's Degree in Electrical and Electronic Engineering</h4>
-                <p className="text-muted-foreground mb-2">Gezira College Of Technology, Khartoum, Sudan | 2014 - 2019</p>
-                <p>Specialization in Telecommunication Engineering (Second Class, Division One)</p>
-                <p>Networking Diploma certification achieved during undergraduate studies</p>
+                <h4 className="text-xl font-medium">
+                  Bachelor's Degree in Electrical and Electronic Engineering
+                </h4>
+                <p className="text-muted-foreground mb-2">
+                  Gezira College Of Technology, Khartoum, Sudan | 2014 - 2019
+                </p>
+                <p>
+                  Specialization in Telecommunication Engineering (Second Class,
+                  Division One)
+                </p>
+                <p>
+                  Networking Diploma certification achieved during undergraduate
+                  studies
+                </p>
               </motion.div>
             </div>
-      
+
             <div className="mb-12">
               <motion.h3
                 className="text-2xl font-semibold mb-6"
@@ -475,7 +549,7 @@ export default function Home() {
               >
                 Certifications & Achievements
               </motion.h3>
-      
+
               <motion.div
                 className="border-l-4 border-primary pl-6 py-2"
                 initial={{ opacity: 0, x: -20 }}
@@ -484,13 +558,21 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Networking Diploma: Learned networking basics and protocols</li>
-                  <li>Completed freelance projects, making fast and reliable backend systems</li>
-                  <li>Interested in learning more about Artificial Intelligence and Cloud Computing</li>
+                  <li>
+                    Networking Diploma: Learned networking basics and protocols
+                  </li>
+                  <li>
+                    Completed freelance projects, making fast and reliable
+                    backend systems
+                  </li>
+                  <li>
+                    Interested in learning more about Artificial Intelligence
+                    and Cloud Computing
+                  </li>
                 </ul>
               </motion.div>
             </div>
-      
+
             <motion.div
               className="text-center mt-12"
               initial={{ opacity: 0, y: 20 }}
@@ -516,7 +598,9 @@ export default function Home() {
       {/* Contact Section */}
       <AnimatedSection id="contact" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <RevealText className="text-3xl md:text-4xl font-bold mb-8 text-center">Get In Touch</RevealText>
+          <RevealText className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            Get In Touch
+          </RevealText>
           <div className="max-w-md mx-auto">
             <ContactForm />
           </div>
@@ -542,23 +626,43 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <motion.div whileHover={{ scale: 1.2, rotate: 10 }} whileTap={{ scale: 0.9 }}>
+            <motion.div
+              whileHover={{ scale: 1.2, rotate: 10 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <Button variant="ghost" size="icon" asChild>
-                <Link href="https://github.com/OmerAlfiel" target="_blank" aria-label="GitHub">
+                <Link
+                  href="https://github.com/OmerAlfiel"
+                  target="_blank"
+                  aria-label="GitHub"
+                >
                   <Github className="h-5 w-5" />
                 </Link>
               </Button>
             </motion.div>
-            <motion.div whileHover={{ scale: 1.2, rotate: -10 }} whileTap={{ scale: 0.9 }}>
+            <motion.div
+              whileHover={{ scale: 1.2, rotate: -10 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <Button variant="ghost" size="icon" asChild>
-                <Link href="https://linkedin.com/in/omer-ahmed-964152205/" target="_blank" aria-label="LinkedIn">
+                <Link
+                  href="https://linkedin.com/in/omer-ahmed-964152205/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                >
                   <Linkedin className="h-5 w-5" />
                 </Link>
               </Button>
             </motion.div>
-            <motion.div whileHover={{ scale: 1.2, rotate: 10 }} whileTap={{ scale: 0.9 }}>
+            <motion.div
+              whileHover={{ scale: 1.2, rotate: 10 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <Button variant="ghost" size="icon" asChild>
-                <Link href="mailto:omer.al7labe.oa@gmail.com" aria-label="Email">
+                <Link
+                  href="mailto:omer.al7labe.oa@gmail.com"
+                  aria-label="Email"
+                >
                   <Mail className="h-5 w-5" />
                 </Link>
               </Button>
@@ -567,5 +671,5 @@ export default function Home() {
         </div>
       </footer>
     </main>
-  )
+  );
 }
